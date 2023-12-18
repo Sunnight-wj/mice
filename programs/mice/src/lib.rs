@@ -18,6 +18,10 @@ pub mod mice {
     pub fn mint_nft(ctx: Context<MintNFT>) -> Result<()> {
         instructions::mint_nft(ctx)
     }
+
+    pub fn transfer_sol(ctx: Context<TransferSOL>) -> Result<()> {
+        instructions::transfer_sol(ctx)
+    }
 }
 
 

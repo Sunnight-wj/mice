@@ -85,5 +85,17 @@ describe("mice", () => {
       })
       .signers([user])
       .rpc();
-  })
+  });
+
+  it("Transfer!", async () => {
+    const recipient = new Keypair();
+    console.log(`Transfer recipient: ${recipient.publicKey}`)
+    const tx = await program.methods
+      .transferSol()
+      .accounts({
+        user: payer.publicKey,
+        recipient: recipient.publicKey,
+      })
+      .rpc();
+  });
 });
