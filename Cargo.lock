@@ -1217,6 +1217,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "mice"
+version = "0.1.0"
+dependencies = [
+ "anchor-lang",
+ "anchor-spl",
+ "mpl-token-metadata",
+ "solana-program",
+]
+
+[[package]]
 name = "mpl-token-auth-rules"
 version = "1.4.3-beta.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1284,16 +1294,6 @@ dependencies = [
  "arrayref",
  "solana-program",
  "spl-token-2022 0.6.1",
-]
-
-[[package]]
-name = "nft-minter"
-version = "0.1.0"
-dependencies = [
- "anchor-lang",
- "anchor-spl",
- "mpl-token-metadata",
- "solana-program",
 ]
 
 [[package]]

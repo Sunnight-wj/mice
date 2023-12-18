@@ -4,10 +4,10 @@ mod instructions;
 mod constant;
 
 
-declare_id!("2dZCKmv4jwqCFKoT82yobCJqBcbp3FD4JZLLQXLqbNMK");
+declare_id!("B9xWniPBaNDGBDi1cxvTwFogiJtSEbZuuoqV2esqnyXp");
 
 #[program]
-pub mod nft_minter {
+pub mod mice {
     pub use super::instructions::*;
     use super::*;
 
@@ -15,7 +15,7 @@ pub mod nft_minter {
         instructions::approve_nft(ctx, amount)
     }
 
-    pub fn mint_sft(ctx: Context<MintNFT>) -> Result<()> {
+    pub fn mint_nft(ctx: Context<MintNFT>) -> Result<()> {
         instructions::mint_nft(ctx)
     }
 }

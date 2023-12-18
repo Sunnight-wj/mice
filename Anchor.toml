@@ -5,13 +5,13 @@ seeds = false
 skip-lint = false
 
 [programs.localnet]
-nft_minter = "2dZCKmv4jwqCFKoT82yobCJqBcbp3FD4JZLLQXLqbNMK"
+mice = "B9xWniPBaNDGBDi1cxvTwFogiJtSEbZuuoqV2esqnyXp"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
+cluster = "https://api.devnet.solana.com"
 wallet = "/home/wangjin/.config/solana/id.json"
 
 [scripts]
